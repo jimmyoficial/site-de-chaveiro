@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Phone, Clock, MapPin, Mail, Facebook, Twitter, Instagram, Youtube, ChevronRight } from "lucide-react"
+import { Phone, Clock, MapPin, Mail, Key, Lock, Shield, PenToolIcon as Tool, ChevronRight } from "lucide-react"
 import ContactForm from "@/components/contact-form"
 import TestimonialCarousel from "@/components/testimonial-carousel"
 import ServiceCard from "@/components/service-card"
@@ -12,8 +12,11 @@ export default function Home() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center">
-            <a href="#" className="text-2xl font-bold text-blue-900">
-              <span className="text-yellow-500">Chave</span>Mestre
+            <a href="#" className="flex items-center text-2xl font-bold text-blue-900">
+              <Key className="h-6 w-6 text-yellow-500 mr-2" />
+              <span>
+                <span className="text-yellow-500">Chaveiro</span> Perto de Você
+              </span>
             </a>
           </div>
 
@@ -329,8 +332,8 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-bold text-lg text-blue-900">Email</h4>
-                      <p className="text-gray-700">contato@chavemestre.com.br</p>
-                      <p className="text-gray-700">suporte@chavemestre.com.br</p>
+                      <p className="text-gray-700">contato@chaveiroperto.com.br</p>
+                      <p className="text-gray-700">suporte@chaveiroperto.com.br</p>
                     </div>
                   </div>
 
@@ -365,25 +368,25 @@ export default function Home() {
                       href="#"
                       className="bg-blue-900 p-3 rounded-full text-white hover:bg-yellow-500 transition-colors"
                     >
-                      <Facebook className="h-5 w-5" />
+                      <Key className="h-5 w-5" />
                     </a>
                     <a
                       href="#"
                       className="bg-blue-900 p-3 rounded-full text-white hover:bg-yellow-500 transition-colors"
                     >
-                      <Twitter className="h-5 w-5" />
+                      <Lock className="h-5 w-5" />
                     </a>
                     <a
                       href="#"
                       className="bg-blue-900 p-3 rounded-full text-white hover:bg-yellow-500 transition-colors"
                     >
-                      <Instagram className="h-5 w-5" />
+                      <Shield className="h-5 w-5" />
                     </a>
                     <a
                       href="#"
                       className="bg-blue-900 p-3 rounded-full text-white hover:bg-yellow-500 transition-colors"
                     >
-                      <Youtube className="h-5 w-5" />
+                      <Tool className="h-5 w-5" />
                     </a>
                   </div>
                 </div>
@@ -398,8 +401,11 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4">
-                <span className="text-yellow-500">Chave</span>Mestre
+              <h3 className="flex items-center text-2xl font-bold mb-4">
+                <Key className="h-5 w-5 text-yellow-500 mr-2" />
+                <span>
+                  <span className="text-yellow-500">Chaveiro</span> Perto de Você
+                </span>
               </h3>
               <p className="mb-4 text-blue-100">
                 Serviços profissionais de chaveiro para residências, empresas e veículos. Disponível 24 horas por dia
@@ -407,16 +413,16 @@ export default function Home() {
               </p>
               <div className="flex space-x-4">
                 <a href="#" className="text-white hover:text-yellow-500 transition-colors">
-                  <Facebook className="h-5 w-5" />
+                  <Key className="h-5 w-5" />
                 </a>
                 <a href="#" className="text-white hover:text-yellow-500 transition-colors">
-                  <Twitter className="h-5 w-5" />
+                  <Lock className="h-5 w-5" />
                 </a>
                 <a href="#" className="text-white hover:text-yellow-500 transition-colors">
-                  <Instagram className="h-5 w-5" />
+                  <Shield className="h-5 w-5" />
                 </a>
                 <a href="#" className="text-white hover:text-yellow-500 transition-colors">
-                  <Youtube className="h-5 w-5" />
+                  <Tool className="h-5 w-5" />
                 </a>
               </div>
             </div>
@@ -531,7 +537,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center">
                   <Mail className="h-5 w-5 text-yellow-500 mr-2" />
-                  <span className="text-blue-100">contato@chavemestre.com.br</span>
+                  <span className="text-blue-100">contato@chaveiroperto.com.br</span>
                 </li>
                 <li className="flex items-center">
                   <Clock className="h-5 w-5 text-yellow-500 mr-2" />
@@ -542,7 +548,7 @@ export default function Home() {
           </div>
 
           <div className="border-t border-blue-800 mt-12 pt-8 text-center text-blue-100">
-            <p>&copy; {new Date().getFullYear()} ChaveMestre Serviços de Chaveiro. Todos os Direitos Reservados.</p>
+            <p>&copy; {new Date().getFullYear()} Chaveiro Perto de Você. Todos os Direitos Reservados.</p>
           </div>
         </div>
       </footer>
